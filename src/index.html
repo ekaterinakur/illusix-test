@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,
+          user-scalable=no,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <section class="form-wrapper">
+        <h3>Добавить мероприятие</h3>
+        <form id="add-data-form">
+            <div>
+                <label for="add-name">Название<br/>
+                    <input type="text" id="add-name"><br/>
+                </label>
+                <label for="add-start-time">Время начала<br/>
+                    <input type="text" id="add-start-time"><br/>
+                </label>                
+            </div>
+            <div>
+                <label for="add-date">Дата<br/>
+                    <input type="text" id="add-date"><br/>
+                </label> 
+                <label for="add-end-time">Время конца<br/>
+                    <input type="text" id="add-end-time"><br/>
+                </label>
+            </div>
+            <div class="add-button">
+                <input type="submit" id="add-button" value="ДОБАВИТЬ">
+            </div>          
+        </form>
+    </section>
+    <section class="events-wrapper">
+        <div class="select">
+            <select id="select-date">
+                <option selected>Дата</option>
+            </select>
+        </div>    
+        <div class="events-tables"></div>
+    </section>
+
+    <script src="./scripts/form_listener.js"></script>
+    <script src="./scripts/select_listener.js"></script>
+    <script src="./scripts/table_creator.js"></script>
+    <script src="./scripts/event_creator.js"></script>
+</body>
+</html>
